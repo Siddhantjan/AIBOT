@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>AIBOT</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <dependencies>
+
+
+        <dependency>
+            <groupId>org.zeromq</groupId>
+            <artifactId>jeromq</artifactId>
+            <version>0.5.3-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.goldrenard</groupId>
+            <artifactId>ab</artifactId>
+            <version>1.0.7</version>
+        </dependency>
+    </dependencies>
+
+    <repositories>
+
+        <repository>
+            <id>jcenter</id>
+            <url>https://maven.java.net/content/repositories/public/</url>
+        </repository>
+
+        <repository>
+            <id>sonatype-nexus-snapshots</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
+
+</project>
